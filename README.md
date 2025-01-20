@@ -7,22 +7,24 @@
 
 ### Passo a passo
 
-- Acessar o terminal 
-- Permitir acesso como administrador: ``` sudo su ```
-  ![Admin](./images/img1.png "Admin")
-- Inserir a senha da administrador
-- Iniciar o setoolkit pelo comando: ``` setoolkit ```
+- Acessar o terminal
+- Permitir acesso como administrador: ``` sudo su ``` <br/>
+  ![Admin](./images/img1.png "Admin") 
+-  Inserir a senha da administrador
+- Iniciar o setoolkit pelo comando: ``` setoolkit ``` <br/>
   ![setoolkit](./images/img2.png "settoolkit")
 - Escolher o tipo de ataque que deseja: ``` Social-Engineering Attacks ```
 - Vetor de ataque: ``` Web Site Attack Vectors ```
-- Método de ataque: ```Credential Harvester Attack Method ```
+- Método de ataque: ```Credential Harvester Attack Method ``` 
+- Método de ataque: ``` Site Cloner ``` <br/>
   ![Select atack](./images/img3.png "Select atack")
-- Método de ataque: ``` Site Cloner ```
 - Quando selecionar o tipo de ataque, vetor e método, seu IP será o ultimo parametro da mensagem, caso deseje usa-lo, somente aperte enter
 - Caso não encontre o IP, é possível obter em outra aba do terminal com o comando: ``` ifconfig ```
-- Digite a URL do site que deseja clonar, nesse caso usarei a do Facebook (atente para usar o método HTTP): http://www.facebook.com
+- Digite a URL do site que deseja clonar, nesse caso usarei a do Facebook (atente para usar o método HTTP): http://www.facebook.com <br/>
   ![Select website](./images/img4.png "Select website")
 ### Resutados
+
+- De acordo a imagem é possível ver que foram obtidos o login e senha da pessoa. <br/>
 
 ![Result](./images/img5.png "Result")
 
