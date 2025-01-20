@@ -1,21 +1,34 @@
-# Phishing para captura de senhas do Facebook
+# Capturando senhas do Facebook por meio de um Phishing
 
-### Ferramentas
+### Ferramentas necessárias
 
-- Kali Linux
+- Máquina virtual Kali Linux 
 - setoolkit
 
-### Configurando o Phishing no Kali Linux
+### Passo a passo
 
-- Acesso root: ``` sudo su ```
-- Iniciando o setoolkit: ``` setoolkit ```
-- Tipo de ataque: ``` Social-Engineering Attacks ```
+- Acessar o terminal 
+- Permitir acesso como administrador: ``` sudo su ```
+  ![Admin](./images/img1.png "Admin")
+- Inserir a senha da administrador
+- Iniciar o setoolkit pelo comando: ``` setoolkit ```
+  ![setoolkit](./images/img2.png "settoolkit")
+- Escolher o tipo de ataque que deseja: ``` Social-Engineering Attacks ```
 - Vetor de ataque: ``` Web Site Attack Vectors ```
 - Método de ataque: ```Credential Harvester Attack Method ```
+  ![Select atack](./images/img3.png "Select atack")
 - Método de ataque: ``` Site Cloner ```
-- Obtendo o endereço da máquina: ``` ifconfig ```
-- URL para clone: http://www.facebook.com
-
+- Quando selecionar o tipo de ataque, vetor e método, seu IP será o ultimo parametro da mensagem, caso deseje usa-lo, somente aperte enter
+- Caso não encontre o IP, é possível obter em outra aba do terminal com o comando: ``` ifconfig ```
+- Digite a URL do site que deseja clonar, nesse caso usarei a do Facebook (atente para usar o método HTTP): http://www.facebook.com
+  ![Select website](./images/img4.png "Select website")
 ### Resutados
 
-![Alt text](./passwd.png "Optional title")
+![Result](./images/img5.png "Result")
+
+### Problemas encontrados e solução
+
+Ao acessar o IP por meio da minha máquina real, tanto para aba anônima ounão, não houve o redirecionamento para o site do Facebook nem a captura das informações desejadas, creio que pela segurança do navegador atual e politica de CORS que não permitia o redirecionamento.
+- Solução: 
+  - Use uma máquina virtual W7 ou XP
+  - Acesse um navegador IE (Internet Explorer)
