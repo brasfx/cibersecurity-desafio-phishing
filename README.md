@@ -28,7 +28,8 @@
 
 ### Problemas encontrados e solução
 
-Ao acessar o IP por meio da minha máquina real, tanto para aba anônima ounão, não houve o redirecionamento para o site do Facebook nem a captura das informações desejadas, creio que pela segurança do navegador atual e politica de CORS que não permitia o redirecionamento.
+Ao acessar o IP por meio da minha máquina real, tanto para aba anônima ou não, não houve o redirecionamento para o site do Facebook nem a captura das informações desejadas, creio que pela segurança do navegador atual e politica de CORS que não permitia o redirecionamento.
 - Solução: 
   - Use uma máquina virtual W7 ou XP
-  - Acesse um navegador IE (Internet Explorer)
+  - Acesse o IP da máquina virtual Kali Linux em um navegador IE (Internet Explorer)
+  - Inserir as informações de login e senha
